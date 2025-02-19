@@ -1,0 +1,22 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/dhanush/Documents/ros2_ws/install/tcebot_gz/lib/python3.12/site-packages",
+        "/home/dhanush/Documents/ros2_ws/install/tcebot_slam/lib/python3.12/site-packages",
+        "/home/dhanush/Documents/ros2_ws/install/tcebot_description/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/dhanush/Documents/ros2_ws/install/tcebot_gz/lib/python3.12/site-packages",
+        "/home/dhanush/Documents/ros2_ws/install/tcebot_slam/lib/python3.12/site-packages",
+        "/home/dhanush/Documents/ros2_ws/install/tcebot_description/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "cSpell.words": [
+        "Dhanush",
+        "rclpy",
+        "TCEBOT",
+        "teleop",
+        "Vrminus",
+        "Vrplus"
+    ]
+}
