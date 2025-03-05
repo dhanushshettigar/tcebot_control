@@ -65,6 +65,8 @@ ros2 launch tcebot_control tcebot_control.launch.py
   sudo usermod -aG gpio tcebot
   sudo chown root:gpio /dev/gpiomem
   sudo chmod g+rw /dev/gpiomem
+  ---- or -----
+  echo 'SUBSYSTEM=="gpio", KERNEL=="gpio*", MODE="0660", GROUP="gpio"' | sudo tee /etc/udev/rules.d/99-gpio.rules
   sudo reboot
   ```
 - Try - `ros2 run teleop_twist_keyboard teleop_twist_keyboard`
