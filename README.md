@@ -52,3 +52,19 @@ Exit:     Q
 ```sh
 ros2 launch tcebot_control tcebot_control.launch.py
 ```
+
+## Troubleshooting
+- If SSH fails, connect a monitor and keyboard to troubleshoot.
+- Ensure all dependencies are installed:
+  ```bash
+  sudo apt install python3-rpi.gpio
+  ```
+- Enable GPIO Access Without Root
+  ```bash
+  sudo groupadd gpio
+  sudo usermod -aG gpio tcebot
+  sudo chown root:gpio /dev/gpiomem
+  sudo chmod g+rw /dev/gpiomem
+  sudo reboot
+  ```
+- Try - `ros2 run teleop_twist_keyboard teleop_twist_keyboard`
