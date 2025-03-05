@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             'differential_drive = tcebot_control.differential_drive:main',
             'teleop_keyboard = tcebot_control.teleop_keyboard:main',
+            'drive = tcebot_control.drive:main',
         ],
     },
 )
